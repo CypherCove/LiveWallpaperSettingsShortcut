@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Live Wallpaper Settings Shortcut</string>
+    <string name="label_wallpaper">LW Settings</string>
+    <string name="label_picker">Live Wallpapers</string>
+    <string name="label_picker_long">Open live wallpaper picker</string>
+    <string name="label_screensaver">Screen Savers</string>
+    <string name="label_screensaver_long">Open screen saver settings</string>
+    <string name="wallpaper_no_settings">The current live wallpaper has no settings.</string>
+</resources>
