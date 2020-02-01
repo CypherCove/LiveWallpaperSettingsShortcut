@@ -44,11 +44,15 @@ class MainActivity : Activity() {
     }
 
     private fun openWallpaperSettings(wallpaperPackage: String, settingsActivity: String){
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            component = ComponentName(wallpaperPackage, settingsActivity)
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        try {
+            val intent = Intent(Intent.ACTION_MAIN).apply {
+                component = ComponentName(wallpaperPackage, settingsActivity)
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            startActivity(intent)
+        } catch (e: SecurityException){
+            Toast.makeText(this, R.string.wallpaper_restricted_settings, Toast.LENGTH_LONG).show()
         }
-        startActivity(intent)
     }
 
 }

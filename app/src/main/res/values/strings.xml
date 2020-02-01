@@ -6,4 +6,5 @@
     <string name="label_screensaver">Screen Savers</string>
     <string name="label_screensaver_long">Open screen saver settings</string>
     <string name="wallpaper_no_settings">The current live wallpaper has no settings.</string>
+    <string name="wallpaper_restricted_settings">The current live wallpaper does not permit other apps to open its settings.</string>
 </resources>
